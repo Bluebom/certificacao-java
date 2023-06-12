@@ -2,10 +2,25 @@ package arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
+       ArrayList<String>  nomes = new ArrayList<>();
+       nomes.add("Java");
+       nomes.add("Kotlin");
+
+        Iterator<String> it = nomes.iterator();
+
+        while (it.hasNext())
+        {
+            String atual = it.next();
+            System.out.println(atual);
+        }
+    }
+
+    public static void ArrayListUtils() {
         ArrayList<String> nomes = new ArrayList<>();
         nomes.add("Java");
         nomes.add("Ruby");
@@ -33,7 +48,6 @@ public class Main {
         }
 
     }
-
     public static void MultDimensional(String[] args)
     {
         int[][] strange = new int[2][];
