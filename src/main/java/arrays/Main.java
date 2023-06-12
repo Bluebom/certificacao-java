@@ -1,7 +1,41 @@
 package arrays;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Objects;
+
 public class Main {
     public static void main(String[] args) {
+        ArrayList<String> nomes = new ArrayList<>();
+        nomes.add("Java");
+        nomes.add("Ruby");
+        nomes.add("PHP");
+
+        System.out.println(nomes.contains("Java"));
+
+        boolean hasRemoved = nomes.remove("Java");
+
+        System.out.println(hasRemoved);
+
+        System.out.println(nomes.contains("JAVA"));
+
+        Object[] oNomes = nomes.toArray();
+
+        for(Object nome : oNomes)
+        {
+            System.out.println(nome);
+        }
+
+        nomes.set(0, "Kotlin");
+        for(Object nome : nomes)
+        {
+            System.out.println(nome);
+        }
+
+    }
+
+    public static void MultDimensional(String[] args)
+    {
         int[][] strange = new int[2][];
         strange[0] = new int[20];
         strange[1] = new int[30];
