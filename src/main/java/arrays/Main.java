@@ -2,7 +2,16 @@ package arrays;
 
 public class Main {
     public static void main(String[] args) {
+        int[][] strange = new int[2][];
+        strange[0] = new int[20];
+        strange[1] = new int[30];
+        for(int i = 0; i < strange.length; i++)
+        {
+            System.out.println(strange[i].length);
+        }
+    }
 
+    public static void clients() {
         Client[] clientes = new Client[10];
         for(int i = 0; i < clientes.length; i++)
         {
@@ -21,9 +30,7 @@ public class Main {
             x[x[1]]=-5;
             System.out.println(x[1]);
         }
-
     }
-
     public static void FirstArray(){
         int[] idades = new int[5];
 
